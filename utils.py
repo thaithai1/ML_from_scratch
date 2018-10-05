@@ -5,3 +5,6 @@ def vstack_one(X):
     Stack a vector (1, 1, ..., 1) on top
     """
     return np.vstack((np.ones((1,X.shape[1])),X))
+
+def sigmoid(X):
+    return 1/(1+np.exp(-X))
